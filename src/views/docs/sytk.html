@@ -1,0 +1,310 @@
+
+<!-- saved from url=(0085)https://iicp.pingan.com.cn/icp/mobile_single_insurance/addInsuredRelationship.do#sytk -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1,minimum-scale=1">
+		<meta name="Android" content="Martin_Cui">
+		<title>添加被保人信息</title>
+		<link href="./sytk_files/miuiall.css" type="text/css" rel="stylesheet">
+		<link href="./sytk_files/trafficBeInsured.css" type="text/css" rel="stylesheet">
+		<link href="./sytk_files/miuitraffic.css" type="text/css" rel="stylesheet">
+		<link href="./sytk_files/mobiscroll.core-2.5.2.css" rel="stylesheet" type="text/css">
+		<script src="./sytk_files/hm.js"></script><script src="./sytk_files/jquery-1.8.2.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="./sytk_files/jweixin-1.0.0.js"></script>
+		<script src="./sytk_files/ahsInsuranceForGroupInsurantCommon.js" type="text/javascript"></script>
+		<script src="./sytk_files/dateUtil.js" type="text/javascript"></script>
+		<script type="text/javascript" src="./sytk_files/commonTools.js"></script>
+		<script src="./sytk_files/trafficPolicyholders.js" type="text/javascript"></script>
+		<script src="./sytk_files/ahsInsuranceForGroupInsurant.js" type="text/javascript"></script>
+		<script src="./sytk_files/mobiscroll.core-2.5.2.js" type="text/javascript"></script>
+		<script src="./sytk_files/mobiscroll.core-2.5.2-zh.js" type="text/javascript"></script>
+		<script src="./sytk_files/mobiscroll.datetime-2.5.1.js" type="text/javascript"></script>
+		<script src="./sytk_files/mobiscroll.datetime-2.5.1-zh.js" type="text/javascript"></script>
+		<script type="text/javascript" src="./sytk_files/wechatUtil.js"></script>
+		<!-- 网站统计 -->
+		<script src="./sytk_files/sdc9_m.js"> </script>
+		<script src="./sytk_files/webtrends.js"></script>
+		<script type="text/javascript">
+		   initWebtrends();
+		</script>
+	
+<!-- 百度统计js-api入口 -->
+<script>
+    var _hmt=_hmt||[];
+</script>
+
+<!-- 天眼统计 -->
+<script>
+    var pingan_sdk_appid;
+    if(window.location.origin.indexOf("test")==-1&&window.location.origin.indexOf("localhost")==-1){
+        pingan_sdk_appid="134D94707C924A2AAC710E6BFBAE4D31";
+    }else{
+        pingan_sdk_appid="89F2A227101F471F9865DF00BB979B2C";
+    }
+    var pingan_sdk_vn="noCar_1.21.0";
+    var pingan_sdk_vc="noCar_20170316";
+</script>
+<script type="text/javascript" src="./sytk_files/h5sdk001.js"></script>
+
+	<link href="./sytk_files/33BBFF.css" rel="stylesheet" type="text/css" id="loadCss"></head>
+	<body>
+		<!--#=没加载页面时-->
+		<div class="loadingDiv" style="display: none;"><img src="./sytk_files/ajax-loader.gif"></div>
+		<!--#=主要内容-->
+		<div class="contaitent" id="mainInfo" style="display: none;">
+			<!--#=头部-->
+			<header>
+				<div class="left contaitentback"><a onclick="javascript:history.back(-1);"><img src="./sytk_files/icon_back.png"></a></div>
+				<div class="right contaientAdvisory"><a href="tel:95511" id="dial">咨询</a></div>
+				<div class="right contaitenttitle">员工保障计划——A款</div>
+			</header>
+			<!--#=主要部分-->
+			<main class="content">
+				<!--#=主体引导-->
+				<section class="contenttop">
+					<!--#=主体图标引导-->
+					<div class="contenttopicon">
+						<div class="contentchoiceicon">
+							<span class="left contentchoiceicontu">
+								<!--<img src="../mobileSinglePlatform/images/icon01.png">-->
+								<div class="icon01"></div>
+							</span>
+							<span class="left contentchoiceiconbiao">
+								<!-- <img src="../mobileSinglePlatform/images/icon_yellow.png"> -->
+								<div class="icon_bar"></div>
+							</span>
+							<span class="left contentchoiceicontu">
+								<!-- <img src="../mobileSinglePlatform/images/icon02.png"> -->
+								<div class="icon02"></div>
+							</span>
+							<span class="left contentchoiceiconbiao">
+								<!-- <img src="../mobileSinglePlatform/images/icon_yellow.png"> -->
+								<div class="icon_bar"></div>
+							</span>
+							<span class="left contentchoiceicontu">
+								<!-- <img src="../mobileSinglePlatform/images/icon03.png"> -->
+								<div class="icon03"></div>
+							</span>
+							<span class="left hide contentchoiceiconbiao">
+								<!-- <img src="../mobileSinglePlatform/images/icon_yellow.png"> -->
+								<div class="icon_bar"></div>
+							</span>
+							<span class="left hide contentchoiceicontu">
+								<!-- <img src="../mobileSinglePlatform/images/icon04.png"> -->
+								<div class="icon04"></div>
+							</span>
+						</div>
+					</div>
+					<!--#=主体文字引导-->
+					<div class="contenttoptext">
+						<span class="left contenttoptext01 color01">产品信息</span>
+						<span class="left contenttoptext02 color01">投保人信息</span>
+						<span class="left contenttoptext03 color01">被保险人信息</span>
+						<span class="left contenttoptext04">付款</span>
+					</div>
+				</section>
+				<!--#=主体内容-->
+				<section class="contentner">
+					<form name="savebeinsured" id="savebeinsured" action="https://iicp.pingan.com.cn/icp/mobile_single_insurance/addInsuredRelationship.do" method="post">
+						<!-- 团意产品 -->
+						<input type="hidden" name="groupName" value="qwerq">
+			 			 <input type="hidden" name="industryCode" value="F">
+						 <input type="hidden" name="groupCertificateType" value="03">
+						 <input type="hidden" name="groupCertificateNo" value="412828199029290909">
+						 <input type="hidden" name="linkManName" value="qeqe">
+						 <input type="hidden" name="linkManMobileTelephone" value="13480201222">
+
+
+						 <input type="hidden" name="account" value="CZBX18">
+			 			 <input type="hidden" name="plansId" value="QYTTYW">
+						 <input type="hidden" name="productCode" value="00505">
+						 <input type="hidden" name="productName" value="员工保障计划——A款">
+						 <input type="hidden" name="insuranceBeginTime" value="2017-12-17">
+						 <input type="hidden" name="insuranceEndTime" value="2018-12-16">
+						 <input type="hidden" name="oldDigestTexts" value="65a84e6e213e1762459a7f19e24344a5665495b3">
+						 <input type="hidden" name="startDate" value="">
+						 <input type="hidden" name="endDate" value="">
+						 <input type="hidden" name="applicantCertType" value="01">
+						 <input type="hidden" name="applicantCertNo" value="">
+						 <input type="hidden" name="applicantName" value="">
+						 <input type="hidden" name="telephone" value="">
+						 <input type="hidden" name="applicantEmail" value="">
+						 <input type="hidden" name="insuranceMonth" value="12">
+						 <input type="hidden" name="insuranceDay" value="0">
+						 <input type="hidden" name="topAcceptInsurAge" value="65">
+						 <input type="hidden" name="leastAcceptInsurAge" value="18">
+						 <input type="hidden" name="applicantLimitedSex" value="0">
+		                 <input type="hidden" name="applicantBirthday" value="1992-12-16">
+		                 <input type="hidden" name="applicantSex" value="M">
+		                 <input type="hidden" name="amount" value="130"><!-- 标准保费 -->
+		                 <input type="hidden" name="discountAmount" value=""><!-- 优惠金额 -->
+						 <input type="hidden" value="本投保人兹申明以上述填写内容属实。本投保人已阅读相关保险条款,并特别就条款中有关责任免除和投保人,被保人义务的内容进行阅读。本人同意投保，接受条款内容。根据《中华人民共和国合同法》第十一条规定，数据电文是合法的合同表现形式，本人接受以中国平安财产保险有限公司提供的电子保单作为本投保书成立的合法有效凭证，具有完全证据效力。本人同意提供给平安集团（指中国平安保险（集团）股份有限公司及直接或间接的控股公司）的信息。及本人享有平安集团金融服务产生的信息（包括本单证签署之前提供和产生的），可用于平安集团及服务必要而委托的第三方为本人提供服务及推荐产品，法律禁止除外。平安集团及其委托的第三方上述信息负有保密义务。本产品自本单证签署时生效，具有法律效力，不受合同成立与否及效力状态变化的影响。" id="cuiStatement">
+
+						<input type="hidden" name="secondMediaSource" value="yReSS5rt9922fCX0LPsUBQ==">
+						<input type="hidden" name="mediaSource" value="PACZ_CBPS">
+						<input type="hidden" name="orderNo" value="">
+						<input type="hidden" name="salesManCode" value="2040004914">
+						<input type="hidden" name="saleCode" value="">
+						<input type="hidden" name="applicantIdNo" value="43BTaGwWgMUXUZY/BwuYWNx7bX0DCHr8rUCsLKEB2Ps=">
+						<input type="hidden" name="remark" value="">
+						<input type="hidden" name="recommendCode">
+						<input type="hidden" name="currentUserRecommendCode">
+
+						 
+						 <!--#=保险时间选择-->
+						 <div class="contentner_title">
+						 	<span class="left">被保险人信息（不得少于三人）</span>
+						 	<div class="right contentner_addperson" style="width: 26%;"><a onclick="addPerson()"><span id="addPerson">+被保险人</span></a></div><!-- <img src="./images/icon_plus.png"> -->
+						 </div>
+						 <div class="contentnertimeer_2" id="beInsuredList">
+						 	
+						 </div>
+						 <!--#=保险内容-->
+						 <div class="contentner_content_2">
+						 	<!--#=保险主要内容-->
+						 	<table>
+						 		<tbody><tr>
+							 		<td colspan="2">
+							 			<input id="isagreeinsuredbox" type="checkbox" class="contentner_checkebox left" onchange="agree_02(this)" style="margin-top: 4px;width: 7%;">
+							 			<label for="isagreeinsuredbox" class="left fsize01" style="padding-left: 5px;width: 91%;">我已阅读并同意<a href="javascript:void(0);" id="shiyongTiaokuan" onclick="miuiProvision();_hmt.push([&#39;_trackEvent&#39;,&#39;员工保障计划——A款&#39;,&#39;被保险人信息页面/适用条款按钮&#39;,&#39;PACZ_CBPS/QYTTYW/00505&#39;])">《适用条款》</a>、<a href="javascript:void(0);" id="toubaorenState" onclick="showInsuredlincet();_hmt.push([&#39;_trackEvent&#39;,&#39;员工保障计划——A款&#39;,&#39;被保险人信息页面/投保人声明按钮&#39;,&#39;PACZ_CBPS/QYTTYW/00505&#39;])">《投保人声明》</a>、<a href="javascript:void(0);" id="agentTell" onclick="agentAndSolvencyTell(1);_hmt.push([&#39;_trackEvent&#39;,&#39;员工保障计划——A款&#39;,&#39;被保险人信息页面/机构代理告知书按钮&#39;,&#39;PACZ_CBPS/QYTTYW/00505&#39;])">《保险代理机构客户告知书》</a>及<a href="javascript:void(0);" id="solvencyTell" onclick="agentAndSolvencyTell(2);_hmt.push([&#39;_trackEvent&#39;,&#39;员工保障计划——A款&#39;,&#39;被保险人信息页面/偿付能力告知按钮&#39;,&#39;PACZ_CBPS/QYTTYW/00505&#39;])">《偿付能力披露》</a></label>
+							 		</td>
+							 	</tr>
+							 	<tr>
+							 		<td colspan="2">
+							 		</td>
+							 	</tr>
+							 	
+							 		
+							 		
+							 			<tr>
+									 		<td colspan="2">
+									 			<div class="left fsize03 fwight">应付保费&nbsp;<font id="fontColor"><span id="allAmount">0</span>元</font></div>
+									 		</td>
+									 	</tr>
+							 		
+							 	
+							 	<tr>
+							 		<td colspan="2">
+							 			<div id="error" name="error" class="contentner_contenterror fsize02 color03" align="center"></div>
+							 		</td>
+							 	</tr>
+						 	</tbody></table>
+						 	<!--#=购买-->
+						 	<div class="contentner_submitBut">
+						 		<input type="button" value="支付" class="submitBut_disabled" id="gotopay" onclick="gotoPay();_hmt.push([&#39;_trackEvent&#39;,&#39;员工保障计划——A款&#39;,&#39;被保险人信息页面/支付按钮&#39;,&#39;PACZ_CBPS/QYTTYW/00505&#39;])" disabled="disabled">
+						 	</div>
+
+<!-- 事件追踪 -->
+<script>
+    $(function(){
+        var _account=$("input[name=account]").val(),
+            _mediaSource=$("input[name=mediaSource]").val(),
+            _plansId=$("input[name=plansId]").val(),
+            _productCode=$("input[name=productCode]").val(),
+            _productName=$("input[name=productName]").val(),
+            _source=_mediaSource+"/"+_plansId+"/"+_productCode; 
+
+        if(typeof SKAPP != "undefined"){
+        	SKAPP.onEvent('noCar_channelId','一级渠道',{qd:_account});
+            SKAPP.onEvent('nl_pdname0_btn','产品名称',{pdn:_productName});
+        	SKAPP.onEvent('nl_insured0_page','被保人信息填写页',{pdc:_productCode});
+        	$("#gotopay").click(function(){
+        		SKAPP.onEvent('nl_pay0_btn','支付按钮',{pdc:_productCode});
+        	});
+        	$("#shiyongTiaokuan").click(function(){
+        		SKAPP.onEvent('nl_clause0_btn','适用条款按钮',{pdc:_productCode});
+        	});
+        	$("#toubaorenState").click(function(){
+        		SKAPP.onEvent('nl_note0_btn','投保人声明按钮',{pdc:_productCode});
+        	});
+        	$("#dial").click(function(){
+            	SKAPP.onEvent("nl_call0_btn","拨打95511按钮",{pdc:_productCode});
+        	});
+        }
+        
+        // 支付按钮追踪 
+        $("#gotopay").attr("onclick","gotoPay();_hmt.push(['_trackEvent','"+_productName+"','被保险人信息页面/支付按钮','"+_source+"'])");
+    	// 适用条款按钮追踪
+    	$("#shiyongTiaokuan").attr("onclick","miuiProvision();_hmt.push(['_trackEvent','"+_productName+"','被保险人信息页面/适用条款按钮','"+_source+"'])"); 
+    	// 投保人声明按钮追踪
+    	$("#toubaorenState").attr("onclick","showInsuredlincet();_hmt.push(['_trackEvent','"+_productName+"','被保险人信息页面/投保人声明按钮','"+_source+"'])");
+		//机构代理告知书
+    	$("#agentTell").attr("onclick","agentAndSolvencyTell(1);_hmt.push(['_trackEvent','"+_productName+"','被保险人信息页面/机构代理告知书按钮','"+_source+"'])"); 
+    	// 偿付能力
+    	$("#solvencyTell").attr("onclick","agentAndSolvencyTell(2);_hmt.push(['_trackEvent','"+_productName+"','被保险人信息页面/偿付能力告知按钮','"+_source+"'])");
+    }); 
+</script>
+
+						 	<footer class="clearfix footer">
+					        	<div class="copyright">©中国平安财产保险股份有限公司</div>
+					        </footer>
+						 </div>
+					</form>
+				</section>
+			</main>
+		</div>
+		<!-- 适用条款 -->
+		<div class="contaitent" style="z-index: 2147483647; position: absolute; display: block;" id="sytkInfo">
+			<header style="position: fixed;">
+				<div class="left contaitentback">
+					<a onclick="javascript:history.back(-1);"><img src="./sytk_files/icon_back.png"></a>
+				</div>
+				<div class="right contaitenttitle" id="contaitentTitle">保险条款</div>
+			</header>
+			<div style="width:100%;line-height:20px;margin-bottom:10px;margin-top:50px;word-wrap: break-word;font-size:14px;font-weight:normal;overflow: auto; height: 90%;" id="cui_tbsm_container"></div>
+		</div>
+
+<!-- 百度统计基本访问分析代码 -->
+<script>
+    var _hmt=_hmt||[];
+    (function(){
+        var hm=document.createElement("script");
+        hm.src="https://hm.baidu.com/hm.js?0b7ad4bd12bfb5cbbb2bde3cb61b5560";
+        var s=document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm,s);
+    })();
+</script>
+
+	
+	<script src="./sytk_files/shareAPI.js"></script>
+	<script src="./sytk_files/miuiapi.js" type="text/javascript"></script>
+	<script src="./sytk_files/dynamicLoadCss.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(function(){
+		   /* 进入的时候带出投保人信息  */
+		   $('#insurantName_show').text($('input[name=applicantName]').val());
+		   $('#insurantCertNo_show').val($('input[name=applicantCertNo]').val());
+		   $('input[name=insurantName]').val($('input[name=applicantName]').val());
+		   $('input[name=insurantCertType]').val($('input[name=applicantCertType]').val());
+		   $('input[name=insurantCertNo]').val($('input[name=applicantCertNo]').val());
+		   $('#shoInsurantCertBirthday').val($('input[name=applicantBirthday]').val());
+		   $('#shoInsurantCertSex').val($('input[name=applicantSex]').val());
+		   if (sessionStorage.getItem('saveDatas') && sessionStorage.getItem('allAmount')){
+				getDataFromSessionStorage();
+			}
+			$('.loadingDiv').hide();
+		});
+		//左上角返回按钮退出
+		 callNative(function(api) {
+		    api.on('homePressed', function() {
+		        if (confirm('请确定是否退出?')) {
+		            api.call('goBack');
+		        }
+		    });
+		});
+		 //禁止刷新
+		callNative(function(api) {
+			api.call('disablePullToRefresh');
+		});
+		var gotopay = $("#gotopay");
+		if($("#isagreeinsuredbox").attr('checked')){
+			gotopay.removeAttr("disabled");
+			gotopay.removeClass("submitBut_disabled");
+			gotopay.addClass("submitBut");
+		}else{
+			gotopay.attr("disabled","disabled");
+			gotopay.removeClass("submitBut");
+			gotopay.addClass("submitBut_disabled");
+		}
+	</script>
+<iframe id="miuisProvision" src="./sytk_files/00505.html"></iframe></body></html>

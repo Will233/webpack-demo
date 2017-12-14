@@ -1,0 +1,92 @@
+header {
+	background: #33BBFF;
+}
+
+.contentner_submitBut .submitBut,
+.submitBut{
+	background-color: #33BBFF;
+	background: -webkit-gradient(linear, left top, left bottom, from( #33BBFF /*{b-bar-background-start}*/), to( #33BBFF /*{b-bar-background-end}*/));
+	background: -webkit-linear-gradient( #33BBFF /*{b-bar-background-start}*/, #33BBFF /*{b-bar-background-end}*/);
+	background: -moz-linear-gradient( #33BBFF /*{b-bar-background-start}*/, #33BBFF /*{b-bar-background-end}*/);
+	background: -ms-linear-gradient( #33BBFF /*{b-bar-background-start}*/, #33BBFF /*{b-bar-background-end}*/);
+	background: -o-linear-gradient( #33BBFF /*{b-bar-background-start}*/, #33BBFF /*{b-bar-background-end}*/);
+	background: linear-gradient( #33BBFF, #33BBFF);
+}
+
+.color01 {
+	color: #33BBFF !important;
+}
+
+#fontColor {
+	color: #33BBFF;
+}
+
+#addPerson {
+	color: #33BBFF;
+	float: right;
+}
+
+.deleteThisRows {
+	color: #33BBFF;
+}
+
+.vPopWin-title {
+	background: #33BBFF;
+}
+
+.dwbg .dwb {
+    background: #33BBFF;
+    background: linear-gradient(#33BBFF 50%, #33BBFF 50%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, #33BBFF), color-stop(0.5, #33BBFF));
+    background: -moz-linear-gradient(#33BBFF 50%, #33BBFF 50%);
+    background: -o-linear-gradient(#33BBFF 50%, #33BBFF 50%);
+}
+
+.dwv {
+	border-bottom: 1px solid #33BBFF;
+}
+
+.dwwol {
+	border-top: 1px solid #33BBFF;
+	border-bottom: 1px solid #33BBFF;
+}
+
+.icon01 {
+	width: 100%;
+	height: 25px;
+	background: url(../images/icon01.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.icon02 {
+	width: 100%;
+	height: 25px;
+	background: url(../images/icon02.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.icon03 {
+	width: 100%;
+	height: 25px;
+	background: url(../images/icon03.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.icon04 {
+	width: 100%;
+	height: 25px;
+	background: url(../images/icon04.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.icon_bar {
+	width: 110%;
+	height: 7px;
+	background: url(../images/icon_bar.png) no-repeat;
+	background-size: 100% 100%;
+	margin-left: -3%;
+}
+
+.dateSpan {
+  color: #33BBFF;
+}
